@@ -1,0 +1,78 @@
+@media (max-width: 992px) {
+  .navbar .navbar-brand {
+    margin-right: 0px;
+  }
+
+  .nav-item.dropdown {
+    position: relative;
+  }
+
+  .nav-item.dropdown .click-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 12px;
+  }
+
+  .nav-item.dropdown .click-mobile .la-angle-right {
+    position: relative;
+    cursor: pointer;
+    -moz-transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+  }
+
+  .nav-item.dropdown .click-mobile .la-angle-right.down {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+  }
+
+  .nav-item.dropdown .nav-drop-menu {
+    min-width: none !important;
+    width: 100% !important;
+  }
+
+  .nav-item.dropdown .nav-link {
+    width: 80%;
+  }
+
+  .nav-item .nav-link.active {
+    border-bottom: none !important;
+  }
+
+  .nav-item .nav-link:hover {
+    border-bottom: none !important;
+  }
+
+  .off-lap-only {
+    margin-left: 0px;
+}
+
+.banner-1 {
+    padding-top: 100px;
+}
+
+.banner-2 {
+    padding-top: 100px;
+}
+
+.banner-3 {
+    padding-top: 100px;
+}
+
+.img-slider {
+    height: 170px;
+}
+
+.img-contact {
+    height: auto;
+}
+
+}
+
+@media (max-width: 480px) {
+    .cat-img {
+        height: 220px;
+    }
+}

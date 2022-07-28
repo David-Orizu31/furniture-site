@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Manrope:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600&family=Source+Serif+Pro:wght@400;600;700&family=Uchen&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-header {
+    background: rgb(223, 149, 13);
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+.site-header a {
+    font-weight: 600;
+    color: white;
+}
+
+.navbar {
+    background: white;
+}
+
+.navbar.fixed-top {
+    box-shadow: 0 0 0.625rem 0 rgb(0 0 0 / 10%);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 25px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(223, 149, 13) !important;
+    border-bottom: 2px solid rgb(223, 149, 13);
+}
+
+.navbar-nav .nav-item .nav-link:hover .las {
+    transform: rotate(180deg);
+    transition: all .25s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: rgb(223, 149, 13) !important;
+    border-bottom: 2px solid rgb(223, 149, 13);
+}
+
+.user-menu {
+    border-radius: 0px;
+    border: none;
+    background: rgb(223, 149, 13);
+    min-width: 100px;
+    margin-right: -30px !important;
+}
+
+.user-menu a {
+    color: white;
+    background: rgb(223, 149, 13);
+    font-size: 13px
+}
+
+.user-menu a:hover {
+    color: white;
+    background: rgb(223, 149, 13);
+}
+
+.user-menu a:focus {
+    color: white;
+    background: rgb(223, 149, 13);
+}
+
+.flex-icons {
+    color: rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+.flex-icons .cart-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4px;
+    margin-right: -2px;
+    font-size: 8px;
+    background: rgb(223, 149, 13);
+}
+
+.off-lap-only {
+    margin-left: 30px;
+}
+
+.home-banner {
+    position: relative;
+}
+
+.home-banner .carousel-arrow {
+    border: 0;
+    background: transparent;
+    display: none !important;
+    height: 50px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .home-banner:hover .carousel-arrow {
+     display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .home-banner .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  /* filter: blur(4px);
+  -webkit-filter: blur(4px); */
+
+.banner-1 {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(../img/furniture-ban.jpg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.banner-2 {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(../img/fun-banner-2.jpg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.banner-3 {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(../img/furniture-2.jpg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    padding-top: 120px;
+}
+
+.text-orange {
+    color: rgb(223, 149, 13);
+}
+
+.text-bree {
+    font-family: 'Bree Serif', serif;
+}
+
+.text-manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.text-uchen {
+    font-family: 'Uchen', serif;
+}
+
+.text-source {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.white-bot {
+    height: 2px;
+    width: 70px;
+    background: white;
+}
+
+.btn-shop {
+    color: white;
+    background: rgb(223, 149, 13);
+    border: 1px solid rgb(223, 149, 13);
+    border-radius: 0px;
+}
+
+.btn-shop:hover {
+    color: rgb(223, 149, 13);
+    background: transparent;
+}
+
+.cat-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+    transition: 0.5s all ease-in-out;
+    /* filter: blur(2px);
+    -webkit-filter: blur(2px); */
+}
+
+.categories-area:hover .cat-img {
+    transform: scale(1.2);
+}
+
+.categories-area {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.categories-area .content-overlay {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+  }
+
+  .cat-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+
+  .cat-title h5 {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+  .cat-title .cat-discount-rate {
+    color: white;
+    background: rgb(223, 149, 13);
+    padding: 3px 10px 3px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+  }
+
+  .show-catbtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .show-catbtn .btn-cat {
+    color: white;
+    background: rgb(223, 149, 13);
+    border: 1px solid rgb(223, 149, 13);
+    border-radius: 20px;
+  }
+
+  .categories-area:hover .show-catbtn {
+    margin-right: 15px;
+}
+
+.center {
+    position: relative;
+}
+
+.center .carousel-arrow {
+    border: 0;
+    background: transparent;
+    display: none !important;
+    height: 50px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .center:hover .carousel-arrow {
+     display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .center .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+.img-slider {
+    width: 90%;
+    height: 200px;
+}
+
+.slider-text p {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.slider-text h5 {
+    margin-top: -10px;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.contact-area {
+    background: rgb(241, 227, 199);
+}
+
+.black-bot {
+    background: #212529;
+    height: 3px;
+    width: 50px;
+}
+
+.contact-control {
+    background: transparent;
+    border-radius: 0px;
+    color: #212529;
+    border: 1px solid #212529;
+}
+
+.contact-control:focus {
+    background: transparent;
+    color: #212529;
+    border: 1px solid #212529;
+    box-shadow: none;
+}
+
+.btn-submit {
+    border-radius: 0px;
+    color: white;
+    background: #212529;
+    font-family: 'Manrope', sans-serif;
+}
+
+.img-contact {
+    height: 100%;
+}
+
+.contact-info h5 {
+    font-size: 18px;
+}
+
+.contact-info h5 span {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.testimonials {
+    position: relative;
+}
+
+.testimonials .carousel-arrow {
+    border: 0;
+    background: transparent;
+    display: none !important;
+    height: 50px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  .testimonials:hover .carousel-arrow {
+     display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .testimonials .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  .myslider-dots {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myslider-dots li {
+    display: inline-block;
+    margin: 0 3px;
+  }
+  
+  .myslider-dots li > button {
+    width: 20px;
+    height: 3px;
+    border: none;
+    background: rgb(241, 227, 199);
+    color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .myslider-dots li.slick-active > button {
+    background: rgb(223, 149, 13);
+  }
+
+  .img-testimonial {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
