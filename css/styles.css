@@ -514,3 +514,24 @@ html, body {
   .copyright {
     font-size: 12px;
   }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #e67817;
+    color: white;
+    cursor: pointer;
+    padding: 10px 18px 10px 18px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #e67817;
+  }
+
