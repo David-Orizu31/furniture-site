@@ -81,6 +81,10 @@ html, body {
     position: relative;
 }
 
+.flex-icons:hover {
+  color: rgba(0, 0, 0, 0.55);
+}
+
 .flex-icons .cart-badge {
     position: absolute;
     top: 0;
