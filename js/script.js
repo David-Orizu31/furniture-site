@@ -21,3 +21,6 @@ $(document).scroll(function () {
     var total = headheight + navheight;
     $nav.toggleClass('fixed-top', $(this).scrollTop() > total);
   });
+
+var subtnheight = $('#news-form').height();
+$('.sub-btn').css('height' , subtnheight);

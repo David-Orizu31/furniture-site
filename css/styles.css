@@ -7,7 +7,7 @@ html, body {
 }
 
 .site-header {
-    background: rgb(223, 149, 13);
+    background: #e67817;
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
@@ -36,8 +36,8 @@ html, body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(223, 149, 13) !important;
-    border-bottom: 2px solid rgb(223, 149, 13);
+    color: #e67817 !important;
+    border-bottom: 2px solid #e67817;
 }
 
 .navbar-nav .nav-item .nav-link:hover .las {
@@ -46,32 +46,32 @@ html, body {
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: rgb(223, 149, 13) !important;
-    border-bottom: 2px solid rgb(223, 149, 13);
+    color: #e67817 !important;
+    border-bottom: 2px solid #e67817;
 }
 
 .user-menu {
     border-radius: 0px;
     border: none;
-    background: rgb(223, 149, 13);
+    background: #e67817;
     min-width: 100px;
     margin-right: -30px !important;
 }
 
 .user-menu a {
     color: white;
-    background: rgb(223, 149, 13);
+    background: #e67817;
     font-size: 13px
 }
 
 .user-menu a:hover {
     color: white;
-    background: rgb(223, 149, 13);
+    background: #e67817;
 }
 
 .user-menu a:focus {
     color: white;
-    background: rgb(223, 149, 13);
+    background: #e67817;
 }
 
 .flex-icons {
@@ -88,7 +88,7 @@ html, body {
     margin-top: 4px;
     margin-right: -2px;
     font-size: 8px;
-    background: rgb(223, 149, 13);
+    background: #e67817;
 }
 
 .off-lap-only {
@@ -149,7 +149,7 @@ html, body {
 }
 
 .text-orange {
-    color: rgb(223, 149, 13);
+    color: #e67817;
 }
 
 .text-bree {
@@ -200,13 +200,13 @@ html, body {
 
 .btn-shop {
     color: white;
-    background: rgb(223, 149, 13);
-    border: 1px solid rgb(223, 149, 13);
+    background: #e67817;
+    border: 1px solid #e67817;
     border-radius: 0px;
 }
 
 .btn-shop:hover {
-    color: rgb(223, 149, 13);
+    color: #e67817;
     background: transparent;
 }
 
@@ -256,7 +256,7 @@ html, body {
 
   .cat-title .cat-discount-rate {
     color: white;
-    background: rgb(223, 149, 13);
+    background: #e67817;
     padding: 3px 10px 3px 10px;
     font-size: 11px;
     border-radius: 20px;
@@ -273,8 +273,8 @@ html, body {
 
   .show-catbtn .btn-cat {
     color: white;
-    background: rgb(223, 149, 13);
-    border: 1px solid rgb(223, 149, 13);
+    background: #e67817;
+    border: 1px solid #e67817;
     border-radius: 20px;
   }
 
@@ -330,7 +330,7 @@ html, body {
 }
 
 .contact-area {
-    background: rgb(241, 227, 199);
+    background: #f3e5d8;
 }
 
 .black-bot {
@@ -416,20 +416,101 @@ html, body {
   
   .myslider-dots li > button {
     width: 20px;
-    height: 3px;
+    height: 4px;
     border: none;
-    background: rgb(241, 227, 199);
+    background: #f0d9c5;
     color: transparent;
     cursor: pointer;
     outline: none;
   }
   
   .myslider-dots li.slick-active > button {
-    background: rgb(223, 149, 13);
+    background: #e67817;
   }
 
   .img-testimonial {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+  }
+
+  .bg-enquiry {
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(../img/enquiry-bg-2.jpeg) no-repeat center fixed;
+    min-height: 300px;
+    background-size: cover;
+    padding-top: 90px;
+  }
+
+      /* background: #2e2c2b; */
+
+  .footer-area .newsletter-area {
+    background: #474544;
+  }
+
+  .form-floating>label {
+    color: white !important;
+  }
+
+  .news-control {
+    background: transparent;
+    color: white !important;
+    border-radius: 0px;
+  }
+
+  .news-control:focus {
+    background: transparent;
+    color: white !important;
+    border-radius: 0px;
+    box-shadow: none;
+    border-color: white;
+  }
+
+  .sub-btn {
+    background: white;
+    color: #e67817;
+    border-radius: 0px;
+    border: 1px solid white;
+    font-size: 17px;
+  }
+
+  .sub-btn:hover {
+    background: transparent;
+    color: white;
+  }
+
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #e67817;
+  }
+
+  .footer-area .main-area {
+    background: #2e2c2b;
+  }
+
+  .footer-area .main-area .foot-text {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  .foot-links {
+    list-style-type: none;
+    padding-inline-start: 0px;
+  }
+
+  .foot-links li a {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 2em;
+  }
+
+  .foot-links li a:hover {
+    color: #e67817 !important;
+  }
+
+  .copyright {
+    font-size: 12px;
   }
