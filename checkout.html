@@ -125,115 +125,117 @@
     </nav>
 
     <div class="container">
-        <section class="prod-addcart-area mt-3">
-            <h2 class="text-center text-source text-uppercase font-600">Product Name</h2>
+        <section class="billing-area mt-3">
+        <h2 class="text-source text-center text-uppercase font-600">Billing</h2>
 
-            <div class="row mt-4">
-               <div class="col-lg-6">
-                  <img src="img/bedroom.jpg" alt="" class="img img-fluid img-main" width="100%">
+        <div class="row">
+        <div class="col-lg-8">
+        <h6 class="text-orange">Item(s) purchased cost ₦200,000.00.</h6>
 
-                  <br><br>
-                  <div class="multiimg">
-                    <div class="img-slider" align="center">
-                        <img src="img/bedroom.jpg" alt="" class="img-multi">
-                    </div>
-                    <div class="img-slider" align="center">
-                        <img src="img/contact-bg.jpg" alt="" class="img-multi">
-                    </div>
-                    <div class="img-slider" align="center">
-                        <img src="img/contact-furniture.jpg" alt="" class="img-multi">
-                    </div>
-                    <div class="img-slider" align="center">
-                        <img src="img/enquiry-bg.jpg" alt="" class="img-multi">
-                    </div>
-                  </div>
-               </div> 
-
-               <div class="col-lg-6 mt-3 mt-lg-0">
-                <h3 class="text-orange text-raleway">Product Name</h3>
-                <h6 class="text-manrope"><span class="text-orange font-600">Category :</span> <span class="font-500">Cat Name</span></h6>
-                <h4 class="font-700">₦ 200,000</h4>
-
-                <form action="" method="post">
-                   <div class="form-group mt-3">
-                    <label for="quantity" class="form-label">Quantity</label>
-                    <select name="quantity" id="quantity" class="form-select" style="border-radius: 0px;">
-                        <option value="1">1</option>
-                    </select>
-                   </div>
-
-                   <div class="form-group mt-4">
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-cart"><span class="las la-cart-plus" style="font-size: 20px;"></span> Add to Cart</button>
-                    </div>
-                   </div>
-                </form>
-
-               </div>
-            </div>
-
-        </section>
-
-        <div class="desc-area mt-5">
-            <div class="cat-card">
-                <h4 class="text-raleway text-orange font-600">Detailed Description</h4>
-                <hr>
-                <p>Description goes here</p>
-            </div>
+        <form action="" method="post" class="text-raleway font-600">
+        
+        <div class="row">
+        <div class="col-md-6 mt-2">
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name" style="border-radius: 0px;" required>
+          </div>
         </div>
 
-        <div class="recommended-area mt-5">
-            <h2 class="text-source font-500 text-center">Might Also Like</h2>
-            <br>
-            <div class="center">
-              <div class="recom-area" align="center">
-                 <img src="img/bedroom.jpg" alt="" class="img img-slider">
-                 <div class="container-fluid">
-                  <div class="slider-text">
-                  <p class="text-manrope font-500">Furniture 22 Casper Rade True</p>
-                  <h5 class="text-bree text-orange">₦200,000 - ₦500,000</h5>
-                </div>
-                 </div>
-              </div>
-              <div class="recom-area" align="center">
-                <img src="img/fun-banner-1.jpg" alt="" class="img img-slider">
-                <div class="container-fluid">
-                  <div class="slider-text">
-                  <p class="text-manrope font-500">Furniture 22 Casper Rade True</p>
-                  <h5 class="text-bree text-orange">₦200,000 - ₦500,000</h5>
-                </div>
-                 </div>
-             </div>
-             <div class="recom-area" align="center">
-              <img src="img/fun-banner-3.jpg" alt="" class="img img-slider">
-              <div class="container-fluid">
-                <div class="slider-text">
-                <p class="text-manrope font-500">Furniture 22 Casper Rade True</p>
-                <h5 class="text-bree text-orange">₦200,000 - ₦500,000</h5>
-              </div>
-               </div>
-             </div>
-             <div class="recom-area" align="center">
-              <img src="img/home-office.jpg" alt="" class="img img-slider">
-              <div class="container-fluid">
-                <div class="slider-text">
-                <p class="text-manrope font-500">Furniture 22 Casper Rade True</p>
-                <h5 class="text-bree text-orange">₦200,000 - ₦500,000</h5>
-              </div>
-               </div>
-             </div>
-             <div class="recom-area" align="center">
-              <img src="img/seating.jpg" alt="" class="img img-slider">
-              <div class="container-fluid">
-                <div class="slider-text">
-                <p class="text-manrope font-500">Furniture 22 Casper Rade True</p>
-                <h5 class="text-bree text-orange">₦200,000 - ₦500,000</h5>
-              </div>
-               </div>
-             </div>
+        <div class="col-md-6 mt-2">
+            <div class="form-group">
+              <label for="mobile" class="form-label">Telephone Number</label>
+              <input type="tel" name="mobile" id="mobile" class="form-control" placeholder="Enter Telephone Number" style="border-radius: 0px;" required>
             </div>
           </div>
 
+          <div class="col-md-12 mt-2">
+            <div class="form-group">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" name="address" id="address" class="form-control" placeholder="Enter Residential Address" style="border-radius: 0px;" required>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-2">
+            <div class="form-group">
+              <label for="gender" class="form-label">Gender</label>
+              <select name="gender" id="gender" class="form-select">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-2">
+            <div class="form-group">
+              <label for="products" class="form-label">Product(s)</label>
+              <input type="text" name="products" id="products" class="form-control" style="border-radius: 0px;" required>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-2">
+            <div class="form-group">
+              <label for="comments" class="form-label">Add Comment(s) Below</label>
+              <textarea name="coments" id="comments" cols="30" rows="5" class="form-control" style="border-radius: 0px;"></textarea>
+            </div>
+          </div>
+
+          <div class="col-md-12 mt-3">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-cart text-manrope font-600" style="border-radius: 0px;">Submit</button>
+            </div>
+          </div>
+
+        </div>
+
+        </form>
+
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="cat-card card">
+                <h5>Items Purchased</h5>
+                <hr style="margin-top: 5px;">
+                <div class="product-card card">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/bedroom.jpg" alt="" class="img-cart" width="100%">
+                        </div>
+
+                        <div class="col-md-7 text-end mt-2 mt-md-0">
+                            <div class="p-1">
+                          <p class="font-400 checkout-text">Furniture 22 Casper Rade True</p>
+                          <h6 class="text-orange checkout-subprice font-600">₦200,000.00</h6>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card mt-3">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/bedroom.jpg" alt="" class="img-cart" width="100%">
+                        </div>
+
+                        <div class="col-md-7 text-end mt-2 mt-md-0">
+                            <div class="p-1">
+                          <p class="font-400 checkout-text">Furniture 22 Casper Rade True</p>
+                          <h6 class="text-orange checkout-subprice font-600">₦200,000.00</h6>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-3 total-area px-2 py-3">
+                    <h4 class="text-white">Total</h4>
+                    <h3 class="text-orange">₦400,000.00</h3>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
     </div>
 
     <section class="bg-enquiry mt-5">
@@ -442,45 +444,6 @@ $('.testimonials').slick({
                wow.init();
          
              </script>    
-
-    <script>
-        $('.multiimg').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  autoplay:true,
-  autoplaySpeed:2000,
-  arrows: true,
-  nextArrow: '<button class="carousel-arrow next inverted"><i class="la la-angle-right text-white"></i></button>',
-  prevArrow: '<button class="carousel-arrow prev inverted"><i class="la la-angle-left text-white"></i></button>',
-  responsive: [
-    {
-      breakpoint: 800,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
-      }
-    }
-  ]
-});
-    </script>
-
-    <script>
-        $('.img-multi').click(function() {
-          $('.img-main').attr('src', this.src);
-        });
-    </script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>

@@ -775,3 +775,31 @@ html, body {
   .multiimg .carousel-arrow.next {
     right: 0;
   }
+
+  .cart-area .first-row {
+    max-width: 200px;
+    min-width: 100px;
+  }
+
+  .cart-table p {
+     margin-bottom: 0px;
+     font-size: 14px;
+     line-height: 1.5em;
+  }
+  
+  .cartcheck-btns {
+    border-radius: 0px;
+  }
+
+  .checkout-text {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  .checkout-subprice {
+    font-size: 20px;
+  }
+
+  .total-area {
+    background: #383635;
+  }

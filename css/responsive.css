@@ -87,4 +87,8 @@
     .services-cat .services-img img {
       height: 250px;
     }
+
+    .cartcheck-btns {
+      font-size: 12px;
+    }
 }
