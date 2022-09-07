@@ -69,10 +69,22 @@
     height: auto;
 }
 
+.services-cat .services-img img {
+  height: 210px;
+}
+
 }
 
 @media (max-width: 480px) {
     .cat-img {
         height: 220px;
+    }
+
+    .site-text {
+      font-size: 16px;
+    }
+
+    .services-cat .services-img img {
+      height: 250px;
     }
 }

@@ -539,3 +539,239 @@ html, body {
     background-color: #e67817;
   }
 
+  .other-banners {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(../img/living-room.jpg) no-repeat center;
+    min-height: 300px;
+    background-size: cover;
+    padding-top: 80px;
+  }
+
+  .site-text {
+    line-height: 1.8em;
+  }
+
+  .values-area .values-list {
+    padding-inline-start: 0px;
+  }
+
+  .values-area .values-list li{
+    line-height: 2em;
+    list-style-type: none;
+  }
+
+  .values-area .values-list li .number {
+    color: #e67817;
+    margin-right: 5px;
+    font-size: 8px;
+  }
+
+  .services-cat {
+    cursor: pointer;
+  }
+
+  .services-cat .services-img img {
+    width: 100%;
+    height: 230px;
+    transition: 1s all ease-in-out;
+  }
+
+  .services-cat .services-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .services-img .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .services-img:hover .content-overlay{
+    opacity: 1;
+  }
+
+  .services-img:hover img {
+    scale: 1.2;
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .services-img:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .fadeIn-bottom{
+    top: 80%;
+  }
+
+  .btn-enquire {
+    color: white;
+    background: #e67817;
+    border-radius: 0px;
+    border: 1px solid #e67817;
+  }
+
+  .btn-enquire:hover {
+    color: #e67817;
+    border: 1px solid #e67817;
+  }
+
+  .cat-card {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+  }
+
+  .btn-cat-menu {
+    color: white;
+    background: #e67817;
+    border: 1px solid #e67817;
+  }
+
+  .btn-cat-menu:hover {
+    color: #e67817;
+    border: 1px solid #e67817;
+  }
+
+  .cat-card .cat-area ul {
+    list-style: none;
+    background: #e67817;
+    padding-inline-start: 0px;
+  }
+
+  .cat-card .cat-area ul li .cat-list {
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 7px 10px 7px 10px;
+  }
+
+  .cat-card .cat-area ul li .cat-list:last-child {
+    border-bottom: none;
+  }
+
+  .cat-card .cat-area ul li .cat-list .fa {
+    cursor: pointer;
+  }
+
+  .cat-card .cat-area ul li a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .subcat-area {
+    background: white !important;
+    padding: 5px 10px 5px 0px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+
+  .subcat-area.show {
+    display: block;
+  }
+
+  .subcat-area.hide {
+    display: none;
+  }
+
+  .subcat-area li {
+    margin-left: 5px;
+  }
+
+  .subcat-area li a {
+    color: #222121 !important;
+    text-decoration: none;
+  }
+
+  .subcat-area li a.active {
+    color: #e67817 !important;
+  }
+
+  .subcat-area li a:hover {
+    color: #e67817 !important;
+  }
+
+  .product-card {
+    border-radius: 0px;
+    border: none;
+  }
+
+  .img-prod-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .btn-cart {
+    color: white !important;
+    background: #e67817 !important
+  }
+
+  .product-link {
+    text-decoration: none;
+  }
+
+  .product-card:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .multiimg .img-slider .img-multi {
+    width: 90%;
+    height: 90px;
+    cursor: pointer;
+  }
+
+  .multiimg {
+    position: relative;
+}
+
+.multiimg .carousel-arrow {
+    border: 0;
+    background: transparent;
+    display: none !important;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+    background: #e67817;
+  }
+
+  .multiimg:hover .carousel-arrow {
+     display: block !important;
+  }
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .multiimg .carousel-arrow.next {
+    right: 0;
+  }
