@@ -803,3 +803,14 @@ html, body {
   .total-area {
     background: #383635;
   }
+
+  .auth-area {
+    border: 2px solid #e67817;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fdfdfd;
+  }
+
+  .auth-bot {
+    font-size: 14px;
+  }
