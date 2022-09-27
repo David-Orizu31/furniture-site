@@ -139,20 +139,20 @@
     <div class="container">
 
         <div class="row mt-5">
-            <div class="col-lg-3">
+            <div class="col-lg-3 d-none d-lg-block">
                 <div class="card cat-card">
                    <div class="row">
                     <div class="col">
                     <h5 class="text-orange text-manrope font-600">Categories</h5>
                    </div>
                    <div class="col text-end">
-                    <button type="button" class="btn btn-cat-menu btn-sm d-inline d-lg-none"><span class="las la-bars"></span> Menu</button>
+                    <!-- <button type="button" class="btn btn-cat-menu btn-sm d-inline d-lg-none"><span class="las la-bars"></span> Menu</button> -->
                 </div>
                    </div>
 
-                   <hr style="margin: 5px 0;" class="d-none d-lg-block">
+                   <hr style="margin: 5px 0;" class="">
 
-                   <div class="cat-area mt-2 d-none d-lg-block">
+                   <div class="cat-area mt-2">
                       <ul>
                         <li>
                             <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-minus" id="cat1" onclick="subcat(1)"></span></span>
@@ -197,10 +197,67 @@
                       </ul>
                    </div>
 
+                   <div class="row">
+                    <h5 class="text-orange text-manrope font-600">Filter</h5>
+                   </div>
+
+                   <hr style="margin: 5px 0;" class="">
+
+                   <form action="" method="get">
+
+                    <div class="row mt-2">
+                      <div class="col">
+                        <label for="price" class="form-label text-raleway"><b>Price</b></label>
+                      </div>
+
+                        <div class="col text-end">
+                          <button type="submit" class="btn btn-apply btn-sm">Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-2">
+                      <range-selector
+                      id="firstslider"
+  min-label="Minimum Range"
+  max-label="Maximum Range"
+  min-range="5"
+  max-range="555"
+  inputs-for-labels
+  slider-color="#e67817"
+  circle-color="#ffffff"
+  circle-border-color="#e67817"
+  circle-focus-border-color="#e67817"
+/>
+   
+  <input type="hidden" name="minprice" id="minprice" value="5">
+  <input type="hidden" name="maxprice" id="maxprice" value="555">
+                    </div>
+
+                  </form>
+
+                  <form action="" method="get">
+
+                    <div class="row mt-2">
+                      <div class="col">
+                        <label for="product" class="form-label text-raleway"><b>Furniture</b></label>
+                      </div>
+
+                        <div class="col text-end">
+                          <button type="submit" class="btn btn-apply btn-sm">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-2">
+                      <input type="text" name="product" id="product" class="form-control" placeholder="Enter to Search" required>
+                    </div>
+
+                  </form>
+
+
                 </div>
             </div>
 
-            <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="col-lg-9">
                 <div class="card cat-card">
                    <h4 class="text-center text-source font-600 text-uppercase">Category</h4>
 
@@ -315,6 +372,151 @@
         </div>
         
     </div>
+
+
+    <div class="fixed-bottom d-block d-lg-none">
+      <div class="mobile-menu">
+      <div class="row">
+        <div class="col-6 g-0 mobile-cols">
+          <a href="javascript:void(0);" class="d-block text-uppercase text-center py-2" id="menubtn"><span class="las la-bars"></span> Menu</a>
+        </div>
+        <div class="col-6 g-0 mobile-cols">
+          <a href="javascript:void(0);" class="d-block text-uppercase text-center py-2" id="searchbtn"><span class="las la-search"></span> Filter</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <style>
+      #myBtn {
+        bottom: 40px !important;
+      }
+    </style>
+
+            <!-- For Mobile Side menu -->
+            <div class="filter-area" id="side-menu" style="display: none;">
+              <div class="filter">
+                <div class="filter-header">
+                  <h5><a href="javascript:void(0)" class="text-dark menu-arrow" style="text-decoration: none;"><i class="la la-long-arrow-left" aria-hidden="true"></i></a> <span style="margin-left: 10px;">Categories</span></h5>
+                </div>
+
+                <div class="px-3 pt-2">
+                  <div class="cat-card">
+                  <div class="cat-area mt-2">
+                    <ul>
+                      <li>
+                          <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-minus" id="cat21" onclick="subcat2(1)"></span></span>
+                          <ul class="subcat-area show" id="subcat21">
+                              <li><a href="#un" class="active">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-plus" id="cat22" onclick="subcat2(2)"></span></span>
+                          <ul class="subcat-area hide" id="subcat22">
+                              <li><a href="#un" class="active">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-plus" id="cat23" onclick="subcat2(3)"></span></span>
+                          <ul class="subcat-area hide" id="subcat23">
+                              <li><a href="#un" class="active">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-plus" id="cat24" onclick="subcat2(4)"></span></span>
+                          <ul class="subcat-area hide" id="subcat24">
+                              <li><a href="#un" class="active">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <span class="cat-list d-block"><a href="">Seating</a> <span class="float-end fa fa-plus" id="cat25" onclick="subcat2(5)"></span></span>
+                          <ul class="subcat-area hide" id="subcat25">
+                              <li><a href="#un" class="active">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                              <li><a href="#un">Option 1</a></li>
+                          </ul>
+                      </li>
+                    </ul>
+                 </div>
+                </div>
+                </div>
+
+                </div>
+            </div>
+
+
+            <!-- For the Filter Area -->
+
+            <div class="filter-area" id="filter-search" style="display: none;">
+              <div class="filter">
+                <div class="filter-header">
+                  <h5><a href="javascript:void(0)" class="text-dark filter-arrow" style="text-decoration: none;"><i class="la la-long-arrow-left" aria-hidden="true"></i></a> <span style="margin-left: 10px;">Filter</span></h5>
+                </div>
+
+                <div class="px-3 pt-2">
+                <form action="" method="get">
+
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="price" class="form-label text-raleway"><b>Price</b></label>
+                    </div>
+
+                      <div class="col text-end">
+                        <button type="submit" class="btn btn-apply btn-sm">Apply</button>
+                      </div>
+                  </div>
+
+                  <div class="form-group mt-2">
+                    <range-selector
+                    id="secondslider"
+min-label="Minimum Range"
+max-label="Maximum Range"
+min-range="5"
+max-range="555"
+inputs-for-labels
+slider-color="#e67817"
+circle-color="#ffffff"
+circle-border-color="#e67817"
+circle-focus-border-color="#e67817"
+/>
+ 
+<input type="hidden" name="minprice" id="minprice2" value="5">
+<input type="hidden" name="maxprice" id="maxprice2" value="555">
+                  </div>
+
+                </form>
+
+                <form action="" method="get">
+
+                  <div class="row mt-2">
+                    <div class="col">
+                      <label for="product" class="form-label text-raleway"><b>Furniture</b></label>
+                    </div>
+
+                      <div class="col text-end">
+                        <button type="submit" class="btn btn-apply btn-sm">Search</button>
+                      </div>
+                  </div>
+
+                  <div class="form-group mt-2">
+                    <input type="text" name="product" id="product" class="form-control" placeholder="Enter to Search" required>
+                  </div>
+
+                </form>
+
+              </div>
+
+              </div>
+            </div>
+
 
     <section class="bg-enquiry mt-5">
         <div class="container">
@@ -525,18 +727,62 @@ $('.testimonials').slick({
 
 
 <script>
+
+if($(window).width() <= 992) {
+  $('#filter-search').show();
+
+  setTimeout(function() {
+    $('#filter-search').hide();
+  },1);
+}
+
     function subcat(id) {
         $('#subcat'+id+'').slideToggle();
         $('#cat'+id+'').toggleClass('fa-minus fa-plus');
     }
 
-    $('.btn-cat-menu').click(function() {
-       $('.cat-area').toggleClass('d-none d-block');
+    function subcat2(id) {
+        $('#subcat2'+id+'').slideToggle();
+        $('#cat2'+id+'').toggleClass('fa-minus fa-plus');
+    }
+
+    $('#menubtn').click(function() {
+       $('#side-menu').show();
     });
+
+    $('#searchbtn').click(function() {
+      $('#filter-search').show();
+    });
+
+    $('.filter-arrow').click(function() {
+      $('#filter-search').hide();
+    })
+
+    $('.menu-arrow').click(function() {
+      $('#side-menu').hide();
+    })
+
+    // $('.btn-cat-menu').click(function() {
+    //    $('.cat-area').toggleClass('d-none d-block');
+    // });
+</script>
+
+<script>
+  window.addEventListener('range-changed', (e) => {
+  const data = e.detail;
+  // console.log(data.minRangeValue);
+  // data = { sliderId: null, minRangeValue: 0, maxRangeValue: 1000 }
+  $('#minprice').val(data.minRangeValue);
+  $('#maxprice').val(data.maxRangeValue);
+  $('#minprice2').val(data.minRangeValue);
+  $('#maxprice2').val(data.maxRangeValue);
+});
 </script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/simpleRange.min.js"></script>
 
   </body>
 </html>

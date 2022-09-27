@@ -718,6 +718,12 @@ html, body {
     color: #e67817 !important;
   }
 
+  .btn-apply {
+    color: white;
+    background: #383635;
+    border: 1px solid #383635;
+  }
+
   .product-card {
     border-radius: 0px;
     border: none;
@@ -814,3 +820,39 @@ html, body {
   .auth-bot {
     font-size: 14px;
   }
+
+  .mobile-menu .mobile-cols {
+    border-right: 1px solid #ffffff;
+  }
+
+  .mobile-menu .mobile-cols a {
+    color: white;
+    background: #212529;
+    text-decoration: none;
+  }
+
+  .mobile-menu .mobile-cols a:hover {
+    color: #e67817;
+  }
+
+  .filter-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.filter-area .filter {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.filter .filter-header {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+}
